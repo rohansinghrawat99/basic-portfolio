@@ -11,15 +11,15 @@ const App: React.FC = () => {
             {
               mode === "night" ? (
                 <div className='flex space-x-2'>
-                  <img src="/public/icons/day_icon_white.svg" alt="ToggleOn" className='h-2 md:h-4 cursor-pointer' onClick={() => setMode("day")}/>
-                  <img src="/public/icons/toggle-on-solid_white.svg" alt="ToggleOn" className='h-8 cursor-pointer' onClick={() => setMode("day")}/>
-                  <img src="/public/icons/night_icon_white.svg" alt="ToggleOn" className='h-2 md:h-4 cursor-pointer' onClick={() => setMode("night")}/>
+                  <img src="/icons/day_icon_white.svg" alt="ToggleOn" className='h-2 md:h-4 cursor-pointer' onClick={() => setMode("day")}/>
+                  <img src="/icons/toggle-on-solid_white.svg" alt="ToggleOn" className='h-8 cursor-pointer' onClick={() => setMode("day")}/>
+                  <img src="/icons/night_icon_white.svg" alt="ToggleOn" className='h-2 md:h-4 cursor-pointer' onClick={() => setMode("night")}/>
                 </div>
               ) : (
                 <div className='flex space-x-2'>
-                  <img src="/public/icons/day_icon_black.svg" alt="ToggleOn" className='h-2 md:h-4 cursor-pointer' onClick={() => setMode("day")}/>
-                  <img src="/public/icons/toggle-on-solid_black.svg" alt="ToggleOn" className='h-4 md:h-8 cursor-pointer rotate-180' onClick={() => setMode("night")}/>
-                  <img src="/public/icons/night_icon_black.svg" alt="ToggleOn" className='h-2 md:h-4 cursor-pointer' onClick={() => setMode("night")}/>
+                  <img src="/icons/day_icon_black.svg" alt="ToggleOn" className='h-2 md:h-4 cursor-pointer' onClick={() => setMode("day")}/>
+                  <img src="/icons/toggle-on-solid_black.svg" alt="ToggleOn" className='h-4 md:h-8 cursor-pointer rotate-180' onClick={() => setMode("night")}/>
+                  <img src="/icons/night_icon_black.svg" alt="ToggleOn" className='h-2 md:h-4 cursor-pointer' onClick={() => setMode("night")}/>
                 </div>
               )
             }
@@ -35,9 +35,9 @@ const App: React.FC = () => {
         </div>
         <footer className='flex w-full justify-center'>
           <div className='flex items-center font space-x-16'>
-            <img src={ `${mode === "night" ? '/public/icons/github_icon_white.svg' : '/public/icons/github_icon_black.svg'}`} alt="ToggleOn" className='h-4 md:h-8 cursor-pointer' onClick={() => window.open('https://github.com/rohansinghrawat99', '_blank', 'noreferrer noopener')}/>
-            <img src={ `${mode === "night" ? '/public/icons/linkedin_icon_white.svg' : '/public/icons/linkedin_icon_black.svg'}`} alt="ToggleOn" className='h-4 md:h-8 cursor-pointer' onClick={() => window.open('https://www.linkedin.com/in/rohan-singh-rawat-110022168/', '_blank', 'noreferrer noopener')}/>
-            <img src={ `${mode === "night" ? '/public/icons/twitter_icon_white.svg' : '/public/icons/twitter_icon_black.svg'}`} alt="ToggleOn" className='h-4 md:h-8 cursor-pointer' onClick={() =>  window.open('https://twitter.com/rohansrawat', '_blank', 'noreferrer noopener')}/>
+            <img src={ `${mode === "night" ? '/icons/github_icon_white.svg' : '/icons/github_icon_black.svg'}`} alt="ToggleOn" className='h-4 md:h-8 cursor-pointer' onClick={() => window.open('https://github.com/rohansinghrawat99', '_blank', 'noreferrer noopener')}/>
+            <img src={ `${mode === "night" ? '/icons/linkedin_icon_white.svg' : '/icons/linkedin_icon_black.svg'}`} alt="ToggleOn" className='h-4 md:h-8 cursor-pointer' onClick={() => window.open('https://www.linkedin.com/in/rohan-singh-rawat-110022168/', '_blank', 'noreferrer noopener')}/>
+            <img src={ `${mode === "night" ? '/icons/twitter_icon_white.svg' : '/icons/twitter_icon_black.svg'}`} alt="ToggleOn" className='h-4 md:h-8 cursor-pointer' onClick={() =>  window.open('https://twitter.com/rohansrawat', '_blank', 'noreferrer noopener')}/>
           </div>
         </footer>
       </div>
