@@ -13,13 +13,13 @@ const App: React.FC = () => {
               mode === "night" ? (
                 <div className='flex space-x-2'>
                   <img src="/icons/day_icon_white.svg" alt="ToggleOn" className='h-2 md:h-4 cursor-pointer' onClick={() => setMode("day")}/>
-                  <img src="/icons/toggle-on-solid_white.svg" alt="ToggleOn" className='h-5 md:h-8 cursor-pointer' onClick={() => setMode("day")}/>
+                  <img src="/icons/toggle-on-solid_white.svg" alt="ToggleOn" className='h-6 md:h-8 cursor-pointer' onClick={() => setMode("day")}/>
                   <img src="/icons/night_icon_white.svg" alt="ToggleOn" className='h-2 md:h-4 cursor-pointer' onClick={() => setMode("night")}/>
                 </div>
               ) : (
                 <div className='flex space-x-2'>
                   <img src="/icons/day_icon_black.svg" alt="ToggleOn" className='h-2 md:h-4 cursor-pointer' onClick={() => setMode("day")}/>
-                  <img src="/icons/toggle-on-solid_black.svg" alt="ToggleOn" className='h-4 md:h-8 cursor-pointer rotate-180' onClick={() => setMode("night")}/>
+                  <img src="/icons/toggle-on-solid_black.svg" alt="ToggleOn" className='h-6 md:h-8 cursor-pointer rotate-180' onClick={() => setMode("night")}/>
                   <img src="/icons/night_icon_black.svg" alt="ToggleOn" className='h-2 md:h-4 cursor-pointer' onClick={() => setMode("night")}/>
                 </div>
               )
